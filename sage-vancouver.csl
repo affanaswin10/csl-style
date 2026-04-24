@@ -72,11 +72,8 @@
     <choose>
       <if variable="page" match="none">
         <choose>
-          <if variable="DOI" match="any">
-            <group prefix=". " delimiter=". ">
-              <date variable="issued" form="text" prefix="Epub ahead of print "/>
-              <text variable="DOI" prefix="DOI: "/>
-            </group>
+<macro name="access">
+</macro>
           </if>
           <else>
             <group delimiter=" " prefix=", ">
